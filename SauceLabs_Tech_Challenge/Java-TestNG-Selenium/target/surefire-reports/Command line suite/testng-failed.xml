@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="40" verbose="0" name="Failed suite [Command line suite]" parallel="classes">
+  <test name="Command line test(failed)" parallel="classes">
+    <classes>
+      <class name="com.yourcompany.Tests.FollowLinkTest">
+        <methods>
+          <include name="verifyLinkTest" invocation-numbers="4 5 2 1 0 3"/>
+        </methods>
+      </class> <!-- com.yourcompany.Tests.FollowLinkTest -->
+      <class name="com.yourcompany.Tests.TextInputTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyCommentInputTest" invocation-numbers="2 1 5 3 0 4"/>
+        </methods>
+      </class> <!-- com.yourcompany.Tests.TextInputTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
